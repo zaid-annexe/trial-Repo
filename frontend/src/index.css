@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #020617;
+  color: white;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+  border: 1px solid rgba(255,255,255,.14);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+.neon-text {
+  text-shadow: 0 0 25px rgba(34,211,238,.7);
+}
+
+.bg-premium {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(34,211,238,.35), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(99,102,241,.3), transparent 28%),
+    radial-gradient(circle at 70% 80%, rgba(245,158,11,.18), transparent 25%),
+    linear-gradient(135deg, #020617, #050816 55%, #0f172a);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 70px 70px;
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(34,211,238,.35);
+}
+
+input,
+select {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: #64748b !important;
+}
+
+select option {
+  background-color: #020617 !important;
+  color: white !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px #020617 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
